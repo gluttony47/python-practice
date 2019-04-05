@@ -6,14 +6,6 @@ from OpenGL.GLU import *
 
 
 
-def Draw():
-    glLineWidth(5)
-    glBegin(GL_LINES)
-    for edge in edges:
-        for vertex in edge:
-            glVertex3fv(vertices[vertex])
-            glColor3f(1, 0, 0)
-    glEnd()
 
 class Pyramid:
     vertices = (
